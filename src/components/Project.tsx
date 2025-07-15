@@ -9,6 +9,7 @@ import mock09 from '../assets/images/montekristo.png';
 
 import '../assets/styles/Project.scss';
 
+
 function Project() {
     return (
         <div className="projects-container" id="projects">
