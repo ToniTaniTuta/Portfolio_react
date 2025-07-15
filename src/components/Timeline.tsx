@@ -1,10 +1,13 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import '../assets/styles/Timeline.scss'
+import "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import "../assets/styles/Timeline.scss";
 
 function Timeline() {
   return (
@@ -12,54 +15,82 @@ function Timeline() {
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>
+          {/* Education */}
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="2017 - 2019"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
-            <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
-            </p>
+            <h3 className="vertical-timeline-element-title">A Levels</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Sir M. A. Refalo 6th Form
+            </h4>
+            <p>Computer Studies & Pure Maths</p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="2019 - 2022"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
-            </p>
+            <h3 className="vertical-timeline-element-title">
+              BSc (Hons) Software Development
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              University of Malta
+            </h4>
+            <p>Information Technology</p>
           </VerticalTimelineElement>
+
+          {/* Work Experience */}
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="2020"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
-            <p>
-              Full-stack Development, API Development, User Experience
-            </p>
+            <h3 className="vertical-timeline-element-title">Lifeguard</h3>
+            <h4 className="vertical-timeline-element-subtitle">ERRC, Malta</h4>
+            <p>Rescue and safety operations</p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="2021 - 2022"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">
+              Student Group Leader
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              International House, Malta
+            </h4>
+            <p>Team leading, coordination</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            date="2023"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Backend Developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">The Pixel</h4>
+            <p>API development, backend architecture</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            date="2023 - Present"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Co-founder & Software Engineer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">3BIT</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Running a software company building apps, platforms, and digital
+              products
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

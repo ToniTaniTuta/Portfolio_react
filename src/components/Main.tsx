@@ -17,7 +17,7 @@ function Main() {
             <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/yujisato/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
-          <h1>Yuji Sato</h1>
+          <h1>Anthony Zammit</h1>
           <p>Full Stack Engineer</p>
 
           <div className="mobile_social_icons">
