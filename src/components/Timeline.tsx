@@ -14,7 +14,18 @@ function Timeline() {
     <div id="history">
       <div className="items-container">
         <h1>Career History</h1>
+
         <VerticalTimeline>
+          <VerticalTimelineElement
+            date="2017 - 2022"
+            iconStyle={{ background: "#5000ca", color: "#fff" }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Waiter</h3>
+            <h4 className="vertical-timeline-element-subtitle">Sapana</h4>
+            <p>Customer service, table waiting, and hospitality duties</p>
+          </VerticalTimelineElement>
+
           {/* Education */}
           <VerticalTimelineElement
             date="2017 - 2019"
