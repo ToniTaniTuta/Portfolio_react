@@ -17,7 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects']];
+const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'],   ['Download CV', 'download'],];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -46,16 +46,22 @@ function Navigation({parentToChild, modeChange}: any) {
     };
   }, []);
 
-  const scrollToSection = (section: string) => {
-    console.log(section)
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
-    } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
-    }
-  };
+ const scrollToSection = (section: string) => {
+  if (section === 'download') {
+    const link = document.createElement('a');
+    link.href = '/AnthonyZammitCV.pdf';
+    link.download = 'AnthonyZammitCV.pdf';
+    link.click();
+    return;
+  }
+
+  const element = document.getElementById(section);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.error(`Element with id "${section}" not found`);
+  }
+};
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>

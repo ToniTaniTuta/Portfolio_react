@@ -156,8 +156,20 @@
         }
 
         .about-section .image-wrapper {
-            padding-left: 5%;
-            width: 100%;
-        }
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        display: block;
+    }
+}
+
     }
 }
