@@ -15,11 +15,11 @@ function Project() {
         <div className="projects-container" id="projects">
             <h1>Projects I Worked On</h1>
             <div className="projects-grid">
-                <div className="project">
+                {/* <div className="project">
                     <img src={mock01} className="zoom" alt="Gozo Channel" width="100%" />
                     <h2>Gozo Channel App</h2>
                     <p>Cross-platform mobile app for ferry schedules, ticketing, and real-time updates for Gozo Channel.</p>
-                </div>
+                </div> */}
 
                 <div className="project">
                     <img src={mock02} className="zoom" alt="Bookora Booking App" width="100%" />
